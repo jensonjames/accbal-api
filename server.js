@@ -16,6 +16,7 @@ mongoose.connect('mongodb://root:evolvus*123@ds161336.mlab.com:61336/alexadb');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+app.get('/', (req, res) => res.send('Hello World!'))
 
 
 var routes = require('./api/routes/accbalroutes'); //importing route
